@@ -12,6 +12,14 @@
       href="https://fonts.cdnfonts.com/css/nordnet-sans-mono"
       rel="stylesheet"
     />
+    <script>
+      // Отключаем Ctrl + колесо мыши
+      window.addEventListener('wheel', function (e) {
+        if (e.ctrlKey) {
+          e.preventDefault(); // предотвращаем масштабирование
+        }
+      }, { passive: false }); // Важно: passive должен быть false
+    </script>
   </head>
   <body>
     <div id="root"></div>
