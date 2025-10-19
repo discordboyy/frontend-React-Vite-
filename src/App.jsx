@@ -4,6 +4,8 @@ import CurrencyDisplay from "./components/CurrencyDisplay.jsx";
 import background from "./assets/Gradient-halo-2.png";
 import logo from "./assets/Makki logo svg (3).svg";
 import backArrow from "./assets/Vector-back.svg";
+import smalllogo from "./assets/Makki logo svg (2).svg";
+import checkmark from "./assets/Vector (3).svg";
 
 export default function App() {
   const [fromCurrency, setFromCurrency] = useState("USD");
@@ -70,7 +72,7 @@ export default function App() {
                   <div className="icon">
                     <img
                       className="img-position"
-                      src="/src/assets/Vector (3).svg"
+                      src={checkmark}
                       alt=""
                     />
                   </div>
@@ -109,7 +111,7 @@ export default function App() {
             <div className="frame-77">
               <div className="frame-76">
                 <div className="makki-logo-svg">
-                  <img src="/src/assets/Makki logo svg (2).svg" alt="Makki" />
+                  <img src={smalllogo} alt="Makki" />
                 </div>
                 <div className="it-s-a-brand-with-space-for-art-and-financial-investments">
                   it&apos;s a brand, with space for art and financial investments:
