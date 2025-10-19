@@ -84,7 +84,7 @@ export default function App() {
               <div className="social-links">
                 <div className="title-social">Social</div>
                 <div className="frame-85">
-                  <a href="#" className="link-social">Linkedin</a>
+                  <a href="https://www.instagram.com/mertygraal/" className="link-social">Linkedin</a>
                   <a href="#" className="link-social">Instagram</a>
                   <a href="#" className="link-social">Facebook</a>
                   <a href="#" className="link-social">Twitter</a>
