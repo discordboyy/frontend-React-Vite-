@@ -1,13 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CurrencySelector from "./components/CurrencySelector.jsx";
 import CurrencyDisplay from "./components/CurrencyDisplay.jsx";
 import background from "./assets/Gradient-halo-2.png";
 import logo from "./assets/Makki logo svg (3).svg";
 import backArrow from "./assets/Vector-back.svg";
-import smalllogo from "./assets/Makki logo svg (2).svg";
-import checkmark from "./assets/Vector (3).svg";
 
 export default function App() {
+  const [fromCurrency, setFromCurrency] = useState("USD");
+  const [toCurrency, setToCurrency] = useState("NOK");
+  const [rate, setRate] = useState(null);
+  const [timestamp, setTimestamp] = useState("");
+
+  // 🔁 запрос к backend при каждом изменении валют
+  useEffect(() => {
+    const fetchRate = async () => {
+      try {
+        const response = await fetch(
+          `https://backend-node-js-express.onrender.com/api/rates?base=${fromCurrency}&symbols=${toCurrency}`
+        );
+        const data = await response.json();
+
+        if (data && data.rates && data.rates[toCurrency]) {
+          setRate(data.rates[toCurrency]);
+          const time = new Date().toLocaleString("en-GB", {
+            timeZone: "Europe/Oslo",
+          });
+          setTimestamp(time);
+        } else {
+          setRate(null);
+        }
+      } catch (error) {
+        console.error("Error fetching rate:", error);
+        setRate(null);
+      }
+    };
+
+    fetchRate();
+  }, [fromCurrency, toCurrency]); // обновлять, когда пользователь меняет валюту
+
   return (
     <>
       <div
@@ -24,7 +54,12 @@ export default function App() {
             <div className="upper-block">
               <div className="id-and-build">
                 <div className="id">ID: ML4523</div>
-                <CurrencySelector />
+                <CurrencySelector
+                  fromCurrency={fromCurrency}
+                  toCurrency={toCurrency}
+                  onChangeFrom={setFromCurrency}
+                  onChangeTo={setToCurrency}
+                />
               </div>
 
               <div className="information-block">
@@ -35,7 +70,7 @@ export default function App() {
                   <div className="icon">
                     <img
                       className="img-position"
-                      src={checkmark}
+                      src="/src/assets/Vector (3).svg"
                       alt=""
                     />
                   </div>
@@ -58,7 +93,12 @@ export default function App() {
               </div>
             </div>
 
-            <CurrencyDisplay />
+            <CurrencyDisplay
+              fromCurrency={fromCurrency}
+              toCurrency={toCurrency}
+              rate={rate}
+              timestamp={timestamp}
+            />
           </div>
         </div>
       </div>
@@ -69,7 +109,7 @@ export default function App() {
             <div className="frame-77">
               <div className="frame-76">
                 <div className="makki-logo-svg">
-                  <img src={smalllogo} alt="Makki" />
+                  <img src="/src/assets/Makki logo svg (2).svg" alt="Makki" />
                 </div>
                 <div className="it-s-a-brand-with-space-for-art-and-financial-investments">
                   it&apos;s a brand, with space for art and financial investments:
@@ -85,7 +125,7 @@ export default function App() {
                 <div className="title-social">Social</div>
                 <div className="frame-85">
                   <a href="#" className="link-social">Linkedin</a>
-                  <a href="https://www.instagram.com/mertygraal/" className="link-social">Instagram</a>
+                  <a href="#" className="link-social">Instagram</a>
                   <a href="#" className="link-social">Facebook</a>
                   <a href="#" className="link-social">Twitter</a>
                   <a href="#" className="link-social">Behance</a>

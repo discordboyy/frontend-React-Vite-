@@ -4,12 +4,12 @@ import rightLine from "../assets/right-line.svg";
 import vectorCurrency from "../assets/Vector-currency.svg";
 import dot from "../assets/Vector (4).svg";
 
-export default function CurrencyDisplay() {
+export default function CurrencyDisplay({ fromCurrency, toCurrency, rate, timestamp }) {
   return (
     <div className="under-block">
       <div className="container-valuta">
         <div className="left-side-of-container">
-          <div className="left-valuta">USD</div>
+          <div className="left-valuta">{fromCurrency}</div>
           <div className="left-line-and-point">
             <div className="left-icon">
               <img className="img-position-2" src={dot} alt="" />
@@ -27,14 +27,16 @@ export default function CurrencyDisplay() {
               <img className="img-position-2" src={dot} alt="" />
             </div>
           </div>
-          <div className="right-valuta">NOK</div>
+          <div className="right-valuta">{toCurrency}</div>
         </div>
       </div>
 
       <div className="currency-and-time">
-        <div className="left-currency">1.</div>
-        <div className="time">17. oktober kl. 23:00:00 GMT+2</div>
-        <div className="right-currency">10,0339.</div>
+        <div className="left-currency">1.00</div>
+        <div className="time">{timestamp || "Loading..."}</div>
+        <div className="right-currency">
+          {rate ? rate.toFixed(4) : "—"}
+        </div>
       </div>
     </div>
   );
