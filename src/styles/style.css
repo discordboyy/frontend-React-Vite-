@@ -1,0 +1,694 @@
+html {
+  scroll-behavior: smooth;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-block,
+.main-block * {
+  box-sizing: border-box;
+}
+.main-block {
+  height: 960px;
+  position: relative;
+  overflow: hidden;
+  background: url(../src/img/Gradient-halo-2.png) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-container {
+  background: #000000;
+  border-radius: 141.49px;
+  width: 1456.4px;
+  height: 771.59px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 95px;
+}
+.frame-17 {
+  display: flex;
+  flex-direction: column;
+  gap: 33.96px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1310.08px;
+  position: absolute;
+  left: 73.57px;
+  top: 105.65px;
+}
+.upper-block {
+  display: flex;
+  flex-direction: column;
+  gap: 92.44px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.id-and-build {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.id {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 42.87559127807617px;
+  font-weight: 400;
+  position: relative;
+}
+  .selector-build,
+  .selector-build * {
+    box-sizing: border-box;
+  }
+
+  .selector-build {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  option {
+    font-family: 'Nordnet Sans Mono', sans-serif;
+  }
+/* Style the dropdown selectors */
+  .selector-build select {
+    background-color: #000000; /* black background */
+    color: #ffffff; /* white text */
+    border: none;
+    border-radius: 8px;
+    font-family: 'Nordnet Sans Mono', sans-serif;
+    font-size: 42.87559127807617px; 
+    font-weight: 400;
+    padding: 5px 15px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+  }
+
+  /* Small arrow indicator */
+  .selector-build select::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    color: #fff;
+    border: none;
+  }
+
+    /* Hover and focus effects */
+  .selector-build select:hover,
+  .selector-build select:focus {
+    border-color: none;
+    outline: none;
+  }
+
+.build { 
+    color: #ffffff; 
+    text-align: left; 
+    font-family: 'Nordnet Sans Mono', sans-serif;
+    font-size: 42.87559127807617px; 
+    font-weight: 400; 
+    position: relative; 
+    margin-left: -16px;
+    margin-right: -10px;
+}
+.information-block {
+  display: flex;
+  flex-direction: row;
+  gap: 194.31px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.tradingview-info {
+  display: flex;
+  flex-direction: row;
+  gap: 43.39px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+.icon {
+  background-color: #F3F853;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 147.15px;
+  height: 147.15px;
+  position: relative;
+  overflow: visible;
+}
+.about-tradingview {
+  display: flex;
+  flex-direction: column;
+  gap: 7.55px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 481.06px;
+  position: relative;
+}
+.tradingview-text {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 36.07249069213867px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.tradingview-link {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 56.54606246948242px;
+  font-weight: 500;
+  text-decoration: underline;
+  position: relative;
+  align-self: stretch;
+}
+.about-api {
+  display: flex;
+  flex-direction: column;
+  gap: 7.55px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 444.16px;
+  position: relative;
+}
+.text-api {
+  color: #ffffff;
+  text-align: right;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 41.145912170410156px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.name-api {
+  color: #b2b2b2;
+  text-align: right;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 38.88333511352539px;
+  font-weight: 600;
+  text-decoration: underline;
+  position: relative;
+  align-self: stretch;
+  cursor: pointer;
+}
+.under-block {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container-valuta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.left-side-of-container {
+  display: flex;
+  flex-direction: row;
+  gap: 39.62px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.left-valuta {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 95.67162322998047px;
+  font-weight: 700;
+  position: relative;
+  width: 192.43px;
+}
+.left-line-and-point {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.left-icon {
+  background-color: #F3F853;
+  border-radius: 50px;
+  flex-shrink: 0;
+  width: 33.96px;
+  height: 33.96px;
+  position: relative;
+  overflow: visible;
+}
+.left-line {
+  flex-shrink: 0;
+  width: 339.78px;
+  height: 119.92px;
+  position: relative;
+  overflow: visible;
+}
+.mid-of-container {
+  display: flex;
+  flex-direction: row;
+  gap: 18.87px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.right-side-of-container {
+  display: flex;
+  flex-direction: row;
+  gap: 39.62px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.right-line-and-point {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.right-line {
+  flex-shrink: 0;
+  width: 343.34px;
+  height: 121.18px;
+  position: relative;
+  overflow: visible;
+}
+.right-icon {
+  background-color: #ffffff;
+  border-radius: 50px;
+  flex-shrink: 0;
+  width: 33.96px;
+  height: 33.96px;
+  position: relative;
+  overflow: visible;
+}
+.right-valuta {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 95.67162322998047px;
+  font-weight: 700;
+  position: relative;
+}
+.currency-and-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.left-currency {
+  color: #acacac;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 39.656639099121094px;
+  font-weight: 400;
+  position: relative;
+  width: 320.71px;
+}
+.time {
+  color: #acacac;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 39.656639099121094px;
+  font-weight: 400;
+  position: relative;
+}
+.right-currency {
+  color: #acacac;
+  text-align: right;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 39.656639099121094px;
+  font-weight: 400;
+  position: relative;
+  width: 320.71px;
+}
+
+.img-position {
+  display: block;
+  margin: auto;
+  margin-top: 22%;
+}
+
+.img-position-2 {
+  display: block;
+  margin: auto;
+  margin-top: 27%;
+}
+
+
+
+
+
+
+
+
+.footer,
+.footer * {
+  box-sizing: border-box;
+}
+.footer {
+  background: #000000;
+  height: 927.81px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1356.44px;
+  position: absolute;
+  left: 282px;
+  top: 97.21px;
+}
+.footer-upper {
+  display: flex;
+  flex-direction: column;
+  gap: 84.44px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-77 {
+  display: flex;
+  flex-direction: row;
+  gap: 22.29px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-76 {
+  display: flex;
+  flex-direction: row;
+  gap: 13.53px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.makki-logo-svg {
+  flex-shrink: 0;
+  height: 58.91px;
+  aspect-ratio: 107.52/58.91;
+}
+
+.it-s-a-brand-with-space-for-art-and-financial-investments {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 34.40040588378906px;
+  font-weight: 400;
+  position: relative;
+}
+.makki-gmail-com {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 34.40040588378906px;
+  font-weight: 400;
+  text-decoration: underline;
+  position: relative;
+}
+hr {
+  width: 1280.44px;
+  border: 1px solid #333333;
+  margin: 0;
+}
+.links-yable {
+  display: flex;
+  flex-direction: row;
+  gap: 48.55px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20.05px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 108.04px;
+  position: relative;
+}
+.title-social {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 16.534372329711914px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.frame-85 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.link-social {
+  color: #aaaaaa;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 20.8934326171875px;
+  line-height: 30.31px;
+  font-weight: 400;
+  position: relative;
+  width: 108.04px;
+  height: 31px;
+  text-decoration: none;
+}
+.company-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20.05px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 123.58px;
+  position: relative;
+}
+.title-company {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 16.534372329711914px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.text-company {
+  color: #aaaaaa;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 20.8934326171875px;
+  line-height: 30.31px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.office-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20.05px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 93.27px;
+  position: relative;
+}
+.title-office {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 16.534372329711914px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.text-office {
+  color: #aaaaaa;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 20.8934326171875px;
+  line-height: 30.31px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 167px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.logo-holder {
+  flex-shrink: 0;
+  width: 753px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.makki-logo-svg2 {
+  position: absolute;
+  inset: 0;
+  aspect-ratio: 777.92/426.26;
+}
+.m2 {
+  color: #e4e4e4;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 332.2538146972656px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 401.5px);
+  top: calc(50% - 156.46px);
+  width: 287.24px;
+  height: 397.72px;
+}
+.a2 {
+  color: #e4e4e4;
+  text-align: right;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 313.92254638671875px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 142.59px);
+  top: calc(50% - 185px);
+  width: 187.81px;
+  height: 375.62px;
+}
+.i {
+  width: 33.86px;
+  height: 216.07px;
+  position: absolute;
+  left: calc(50% - -342.56px);
+  top: calc(50% - 97.02px);
+  overflow: visible;
+  aspect-ratio: 33.86/216.07;
+}
+.k {
+  width: 135.75px;
+  height: 218.16px;
+  position: absolute;
+  left: calc(50% - -195.83px);
+  top: calc(50% - 99.38px);
+  overflow: visible;
+  aspect-ratio: 135.75/218.16;
+}
+.k-1 {
+  width: 135.75px;
+  height: 218.16px;
+  position: absolute;
+  left: calc(50% - -38.85px);
+  top: calc(50% - 99.38px);
+  overflow: visible;
+  aspect-ratio: 135.75/218.16;
+}
+.footer-right-side {
+  display: flex;
+  flex-direction: row;
+  gap: 60.72px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5.28px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.back-up {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 17.08657455444336px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+}
+.vector-back {
+  flex-shrink: 0;
+  width: 8.44px;
+  height: 11.41px;
+  position: relative;
+  overflow: visible;
+}
+.copyright {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Nordnet Sans Mono', sans-serif;
+  font-size: 17.08657455444336px;
+  font-weight: 400;
+  position: relative;
+}
