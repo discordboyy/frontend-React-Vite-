@@ -35,7 +35,7 @@ export default function App() {
                   <div className="icon">
                     <img
                       className="img-position"
-                      src="/src/assets/Vector (3).svg"
+                      src={checkmark}
                       alt=""
                     />
                   </div>
