@@ -154,7 +154,7 @@ export default function App() {
                 <a href="#main-block" className="back-up">Back to top</a>
                 <img className="vector-back" src={backArrow} alt="arrow" />
               </div>
-              <div className="copyright">Copyright © Makki 2025</div>
+              <a href="/404" className="copyright">Copyright © Makki 2025</a>
             </div>
           </div>
         </div>
