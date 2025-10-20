@@ -114,12 +114,9 @@ export default function App() {
                   <img src={smalllogo} alt="Makki" />
                 </div>
                 <div className="it-s-a-brand-with-space-for-art-and-financial-investments">
-                  it&apos;s a brand, with space for art and financial investments:
+                  it&apos;s a brand, with space for art and financial investments.
                 </div>
               </div>
-              <a href="mailto:makki@gmail.com" className="makki-gmail-com">
-                makki@gmail.com
-              </a>
             </div>
             <hr />
             <div className="links-yable">
